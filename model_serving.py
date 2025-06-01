@@ -8,7 +8,6 @@ Original file is located at
 
 ## llm : kakaocorp/kanana-nano-2.1b-instruct / emb : kanana-emb
 """
-
 # =========================
 # 1. JSON 로드 및 문서화
 # =========================
