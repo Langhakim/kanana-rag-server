@@ -272,5 +272,19 @@ result = qa_chain({"question": question})
 
 print(f'답변 : {result["result"]}')  # 최종 답변
 
-!pip install rag_pipeline
+# =========================
+# 10. FastAPI 서버 선언
+# =========================
+from fastapi import FastAPI
+from pydantic import BaseModel
+
+app = FastAPI()
+
+class Question(BaseModel):
+    query: str
+
+@app.post("/ask")
+def ask_question(item: Question):
+    result = qa_chain({"question": item.query})
+    return {"answer": result["result"]}
 
