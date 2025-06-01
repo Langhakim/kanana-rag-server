@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+transformers
+langchain
+torch
+faiss-cpu
