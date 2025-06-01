@@ -1,6 +1,11 @@
 fastapi
-uvicorn
-transformers
 langchain
+faiss-cpu 
+transformers 
+accelerate 
+sentence-transformers 
+bitsandbytes 
+langchain-community 
+datasets
+uvicorn
 torch
-faiss-cpu
